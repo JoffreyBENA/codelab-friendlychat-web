@@ -6,6 +6,12 @@
  * 3. Select Config from the Firebase SDK snippet pane.
  * 4. Copy the config object snippet, then add it here.
  */
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCT6mTdhVuwtnf_BVeU0nxwk-FohHeJOuY",
   authDomain: "friendlychat-86bc6.firebaseapp.com",
@@ -14,6 +20,9 @@ const firebaseConfig = {
   messagingSenderId: "14144785291",
   appId: "1:14144785291:web:87342dd80e9c54c26efd8e"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 export function getFirebaseConfig() {
   if (!config || !config.apiKey) {
